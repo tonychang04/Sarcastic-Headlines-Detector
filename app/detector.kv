@@ -1,7 +1,7 @@
 # Filename: detector.kv
 <MyGrid>:
     GridLayout:
-        rows: 3
+        cols:1
         size: root.width, root.height
 
         Label:
@@ -9,10 +9,18 @@
             font_name: 'STHeiti Medium.ttc'
             text: "Result: "
 
-        Label:
-            id: results
-            font_name: 'STHeiti Medium.ttc'
-            text: "Result: "
+        GridLayout:
+            cols: 2
+            size: root.width, root.height
+
+            Label:
+                id: results
+                font_name: 'STHeiti Medium.ttc'
+                text: "HeadLine Title: "
+            TextInput:
+                multiline:False
+
+
 
         Button:
             id: predictor
