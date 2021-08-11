@@ -1,0 +1,20 @@
+# Filename: detector.kv
+<MyGrid>:
+    GridLayout:
+        rows: 3
+        size: root.width, root.height
+
+        Label:
+            id: results
+            font_name: 'STHeiti Medium.ttc'
+            text: "Result: "
+
+        Label:
+            id: results
+            font_name: 'STHeiti Medium.ttc'
+            text: "Result: "
+
+        Button:
+            id: predictor
+            text: "Press button : "
+            on_press: root.predict()
