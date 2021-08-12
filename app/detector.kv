@@ -8,6 +8,7 @@
             id: results
             font_name: 'STHeiti Medium.ttc'
             text: "Result: "
+            font_size: 50
 
         GridLayout:
             cols: 2
@@ -16,7 +17,8 @@
             Label:
                 id: results
                 font_name: 'STHeiti Medium.ttc'
-                text: "HeadLine Title: "
+                text: "News HeadLine Title: "
+                font_size: 50
             TextInput:
                 multiline:False
 
@@ -24,5 +26,6 @@
 
         Button:
             id: predictor
-            text: "Press button : "
+            text: "Predict(Press this to predict)"
             on_press: root.predict()
+            font_size: 50
