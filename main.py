@@ -45,7 +45,7 @@ if __name__ == '__main__':
         pickle.dump(BOW_transform, open(filenameBOW, 'wb'))
 
         filenameSVC = 'Support Vector Machine'
-        support_vector_machine = SVC()
+        support_vector_machine = SVC(probability=True)
         support_vector_machine.fit(vector, Y_train)
 
         pickle.dump(support_vector_machine, open(filenameSVC, 'wb'))
@@ -54,8 +54,8 @@ if __name__ == '__main__':
 
 
 
-    #detectorApp = DetectorApp()
-    #detectorApp.run()
+    detectorApp = DetectorApp()
+    detectorApp.run()
 
 if __name__ == 'other':
     print("nice")

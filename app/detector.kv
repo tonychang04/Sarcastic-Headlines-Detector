@@ -1,11 +1,12 @@
 # Filename: detector.kv
 <MyGrid>:
+    input: input
     GridLayout:
         cols:1
         size: root.width, root.height
 
         Label:
-            id: results
+            id: Results
             font_name: 'STHeiti Medium.ttc'
             text: "Result: "
             font_size: 50
@@ -15,12 +16,14 @@
             size: root.width, root.height
 
             Label:
-                id: results
+                id: inputName
                 font_name: 'STHeiti Medium.ttc'
                 text: "News HeadLine Title: "
                 font_size: 50
             TextInput:
-                multiline:False
+                id: input
+                multiline: True
+                font_size: 40
 
 
 
