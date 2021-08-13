@@ -10,4 +10,4 @@ accuracy of 92%.
 
 For a complete description of our intentions and datasets utliized behind
 out project. Click 
-[Here](AI4ALL Project Proposal.docx)
+[Here](../AI4ALL Project Proposal.docx)
