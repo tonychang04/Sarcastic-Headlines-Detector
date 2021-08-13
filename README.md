@@ -36,9 +36,9 @@ directory of this project and then type
 pip3 install -r requirement.txt
 ```
 
-## **Future Posssiblities**
-* Create a web version of this to increase convenience 
-* Add more headlines for a more conclusive prediction
+## **Future Possiblities**
+* Create a web version of the app to increase convenience 
+* Add more headlines into dataset for a more conclusive prediction
 
 ## **Contact** 
 For any bugs and advices, contact </br>
