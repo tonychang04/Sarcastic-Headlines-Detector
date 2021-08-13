@@ -32,11 +32,17 @@ class MyGrid(Widget):
 
         process_string = BOW_model.transform(input_string)
         print(input_string)
-        print(process_string)
+        vector_element_count = sum(process_string.toarray()[0])
         prediction = SVC_model.predict(process_string)
         prediction_array = SVC_model.predict_proba(process_string)
         print(prediction)
         print(prediction_array)
+        if (vector_element_count == 0):
+            self.ids.Results.text = "Result: Unavailable"
+        elif (prediction == 0):
+            self.ids.Results.text = "Result: Not Sarcastic \n " + str(prediction_array[0][0]) + " Percent"
+        else:
+            self.ids.Results.text = "Result: Sarcastic \n " + str(prediction_array[0][1]) + " Percent"
 
 
 
